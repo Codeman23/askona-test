@@ -152,8 +152,12 @@ button {
   display: flex;
   gap: 4px;
   list-style: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* включает постраничную фиксацию свайпа */
+  -webkit-overflow-scrolling: touch; /* плавная прокрутка на iOS */
 }
 .tabs.dragging {
   scroll-behavior: auto;
@@ -162,6 +166,7 @@ button {
 .tabs .tab {
   cursor: pointer;
   white-space: nowrap;
+  scroll-snap-align: start; /* привязка к началу слайда */
 }
 .tabs.dragging .tab {
   user-select: none;
