@@ -37,7 +37,6 @@ sizeButtons.forEach((button) => {
 });
 
 //Favorites
-
 const favorite = document.querySelector('.slider__like');
 const favoriteButton = favorite.querySelector('.slider__likeImg');
 
@@ -53,9 +52,11 @@ favorite.addEventListener('click', () => {
 const swatchContainer = document.querySelector('.options__swatches');
 const swatches = document.querySelectorAll('.swatch');
 
-swatches.forEach((button) => {
-  button.addEventListener('click', () => {
-    swatchContainer.querySelector('.swatch--active').classList.remove('swatch--active');
-    button.classList.add('swatch--active');
-  });
+swatches.forEach((button, index, array) => {
+  if (index !== array.length - 1) {
+    button.addEventListener('click', () => {
+      swatchContainer.querySelector('.swatch--active').classList.remove('swatch--active');
+      button.classList.add('swatch--active');
+    });
+  }
 });
