@@ -33,11 +33,11 @@
       </header>
 
       <nav class="breadcrumbs" aria-label="Навигация">
-        <div class="breadcrumbs__wrap tabs">
-          <a class="breadcrumbs__item tab" href="#">Главная</a>
-          <a class="breadcrumbs__item tab" href="#">Диваны</a>
-          <a class="breadcrumbs__item tab" href="#">Мини-диваны</a>
-          <span class="breadcrumbs__item breadcrumbs__item--current tab"> Helix Brera&nbsp;&nbsp;56 </span>
+        <div class="breadcrumbs__wrap dragscroll">
+          <span class="breadcrumbs__item">Главная</span>
+          <span class="breadcrumbs__item">Диваны</span>
+          <span class="breadcrumbs__item">Мини-диваны</span>
+          <span class="breadcrumbs__item breadcrumbs__item--current"> Helix Brera&nbsp;&nbsp;56 </span>
         </div>
       </nav>
 
@@ -129,44 +129,44 @@
               </div>
               <a class="options__all" href="#">Все цвета +150</a>
             </div>
-            <div class="options__swatches tabs">
-              <div class="swatch swatch--active tab" type="button" aria-label="Brera 56" aria-pressed="true">
+            <div class="options__swatches dragscroll">
+              <div class="swatch swatch--active" type="button" aria-label="Brera 56" aria-pressed="true">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--1" src="assets/color-active.png" alt="" />
                 </span>
                 <!-- <img class="swatch__check" src="assets/color-check.svg" alt="" width="16" height="11" /> -->
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 2">
+              <div class="swatch" type="button" aria-label="Цвет 2">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--2" src="assets/color-2.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 3">
+              <div class="swatch" type="button" aria-label="Цвет 3">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--3" src="assets/color-3.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 4">
+              <div class="swatch" type="button" aria-label="Цвет 4">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--4" src="assets/color-4.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 5">
+              <div class="swatch" type="button" aria-label="Цвет 5">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--5" src="assets/color-5.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 6">
+              <div class="swatch" type="button" aria-label="Цвет 6">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--6" src="assets/color-6.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab" type="button" aria-label="Цвет 7">
+              <div class="swatch" type="button" aria-label="Цвет 7">
                 <span class="swatch__mask">
                   <img class="swatch__img swatch__img--7" src="assets/color-7.png" alt="" />
                 </span>
               </div>
-              <div class="swatch tab swatch--more" type="button">+150</div>
+              <div class="swatch swatch--more" type="button">+150</div>
             </div>
             <a class="options__sample" href="#">
               <img src="assets/icon-material.svg" alt="" width="20" height="20" />
@@ -191,6 +191,7 @@
 
     <script src="libs/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/dragscroll.js"></script>
     <script src="common.js"></script>
   </body>
 </html>

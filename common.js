@@ -25,36 +25,6 @@ $(document).ready(function () {
   });
 });
 
-const tabsBox = document.querySelectorAll('.tabs');
-
-tabsBox.forEach((tabContainer) => {
-  const allTabs = tabContainer.querySelectorAll('.tab');
-
-  let isDragging = false;
-
-  allTabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      if (tabContainer.querySelector('.active')) {
-        tabContainer.querySelector('.active').classList.remove('active');
-      }
-      tab.classList.add('active');
-    });
-  });
-
-  const dragging = (e) => {
-    if (!isDragging) return;
-    tabContainer.classList.add('dragging');
-    tabContainer.scrollLeft -= e.movementX;
-  };
-  const dragStop = () => {
-    isDragging = false;
-    tabContainer.classList.remove('dragging');
-  };
-  tabContainer.addEventListener('mousedown', () => (isDragging = true));
-  tabContainer.addEventListener('mousemove', dragging);
-  document.addEventListener('mouseup', dragStop);
-});
-
 // Toggle size buttons
 const buttonContainer = document.querySelector('.options__size-list');
 const sizeButtons = document.querySelectorAll('.size');
