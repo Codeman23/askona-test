@@ -257,6 +257,18 @@ button {
   width: 100%;
 }
 
+//slick styles
+.slider__wrap {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.slider__wrap .slick-initialized {
+  opacity: 1;
+  visibility: visible;
+}
+
 .slider__slide {
   position: relative;
   width: 320px;
