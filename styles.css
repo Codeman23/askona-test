@@ -259,12 +259,14 @@ button {
 
 //slick styles
 .slider__wrap {
+  display: none;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
 }
 
-.slider__wrap .slick-initialized {
+.slider__wrap.slick-initialized {
+  display: block;
   opacity: 1;
   visibility: visible;
 }
